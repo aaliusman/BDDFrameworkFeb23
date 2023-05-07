@@ -28,8 +28,8 @@ public class BOALoginPage extends InvokeWebDriver {
     }
     @When("user enters incorrect username and password")
     public void user_enters_incorrect_username_and_password() {
-        commonMethods.enterText(driver, By.cssSelector("#onlineId1"), "asdjflkl");
-        commonMethods.enterText(driver, By.name("passcode1"), "@#%FSf");
+        commonMethods.enterText(driver, By.cssSelector("#onlineId1"), "-------");
+        commonMethods.enterText(driver, By.name("passcode1"), "---------");
     }
     @When("user clicks saveID button")
     public void user_clicks_save_id_button() {
