@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-13T10:12:47 EDT" name="All Test Suite" finished-at="2023-05-13T10:14:30 EDT" duration-ms="102487">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginPageRunner@3d5c822d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerThree@6fd83fc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTwo@1b2abca6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-05-13T10:12:47 EDT" name="Runner two" finished-at="2023-05-13T10:14:29 EDT" duration-ms="101889">
+      <class name="runner.RunnerThree">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerThree@6fd83fc1]" started-at="2023-05-13T10:12:47 EDT" name="setUpClass" finished-at="2023-05-13T10:12:49 EDT" duration-ms="1886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@cc43f62]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerThree@6fd83fc1]" started-at="2023-05-13T10:12:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:13:30 EDT" duration-ms="41104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login functionality with incorrect username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerThree@6fd83fc1]" started-at="2023-05-13T10:13:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:14:05 EDT" duration-ms="34341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login functionality with incorrect username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerThree@6fd83fc1]" started-at="2023-05-13T10:14:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:14:29 EDT" duration-ms="24406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test 3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerThree@6fd83fc1]" started-at="2023-05-13T10:14:29 EDT" name="tearDownClass" finished-at="2023-05-13T10:14:29 EDT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunnerThree -->
+    </test> <!-- Runner two -->
+    <test started-at="2023-05-13T10:12:47 EDT" name="BDD Framework" finished-at="2023-05-13T10:14:29 EDT" duration-ms="102115">
+      <class name="runner.LoginPageRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.LoginPageRunner@3d5c822d]" started-at="2023-05-13T10:12:47 EDT" name="setUpClass" finished-at="2023-05-13T10:12:49 EDT" duration-ms="1887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2cb4893b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginPageRunner@3d5c822d]" started-at="2023-05-13T10:12:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:13:30 EDT" duration-ms="41105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login functionality with incorrect username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginPageRunner@3d5c822d]" started-at="2023-05-13T10:13:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:14:05 EDT" duration-ms="34539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login functionality with incorrect username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginPageRunner@3d5c822d]" started-at="2023-05-13T10:14:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:14:29 EDT" duration-ms="24437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test 3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.LoginPageRunner@3d5c822d]" started-at="2023-05-13T10:14:29 EDT" name="tearDownClass" finished-at="2023-05-13T10:14:29 EDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.LoginPageRunner -->
+    </test> <!-- BDD Framework -->
+    <test started-at="2023-05-13T10:12:47 EDT" name="Runner three" finished-at="2023-05-13T10:14:30 EDT" duration-ms="102465">
+      <class name="runner.RunnerTwo">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerTwo@1b2abca6]" started-at="2023-05-13T10:12:47 EDT" name="setUpClass" finished-at="2023-05-13T10:12:49 EDT" duration-ms="1885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b218417]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTwo@1b2abca6]" started-at="2023-05-13T10:12:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:13:30 EDT" duration-ms="41105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login functionality with incorrect username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTwo@1b2abca6]" started-at="2023-05-13T10:13:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:14:05 EDT" duration-ms="34313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login functionality with incorrect username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTwo@1b2abca6]" started-at="2023-05-13T10:14:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T10:14:30 EDT" duration-ms="25014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test 3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BOA Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerTwo@1b2abca6]" started-at="2023-05-13T10:14:30 EDT" name="tearDownClass" finished-at="2023-05-13T10:14:30 EDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunnerTwo -->
+    </test> <!-- Runner three -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
