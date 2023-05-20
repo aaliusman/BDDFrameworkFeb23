@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/CheckingPage.feature",
         glue = "stepDefinitions",
         plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
-        tags = "@Regression"
+        tags = "@Smoke"
 )
 public class CheckingPageRunner extends AbstractTestNGCucumberTests {
 }

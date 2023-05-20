@@ -3,38 +3,56 @@ package stepDefinitions;
 import driver.InvokeWebDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import pages.CheckingPage;
 import utils.CommonMethods;
 
-public class BOACheckingPage extends InvokeWebDriver {
-    CommonMethods commonMethods = new CommonMethods();
+import java.io.ByteArrayInputStream;
+
+
+public class BOACheckingPage  {
+
+
     CheckingPage checkingPage = new CheckingPage();
-    WebDriver driver = null;
     String expectedIntroTextOne = "Stay flexible with Bank of";
     String expectedIntroTextTwo = "America Advantage Banking";
     String expectedExploreCheckingText = "Explore checking solutions";
     String expectedStudentBanking = "Student Banking";
     String expectedBusinessChecking = "Business Checking";
 
-
-    //    @Given("user opens chrome browser")
-//    public void user_opens_chrome_browser() {
-//        driver = initiateWebDriver();
-//    }
-//    @When("user enters url")
-//    public void user_enters_url() {
+    public static WebDriver driver = null;
+    CommonMethods commonMethods = new CommonMethods();
+    InvokeWebDriver invokeWebDriver = new InvokeWebDriver();
+//    @Before
+//    public void setUp() {
+//        driver = invokeWebDriver.initiateWebDriver();
 //        commonMethods.getBOAUrl(driver);
 //    }
-    @Before
-    public void setUp() {
-        driver = initiateWebDriver();
-        commonMethods.getBOAUrl(driver);
+    @After
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Failed screenshot", new ByteArrayInputStream(screenshot));
+        }
+        driver.close();
     }
 
+    @When("user opens chrome browser")
+    public void user_open_chrome_browser() {
+        driver = invokeWebDriver.initiateWebDriver();
+        commonMethods.getBOAUrl(driver);
+    }
+    @When("user enters url")
+    public void user_enters_url() {
+        commonMethods.getBOAUrl(driver);
+    }
 
     @Given("user clicks checking link")
     public void user_clicks_checking_link() throws InterruptedException {
@@ -60,11 +78,5 @@ public class BOACheckingPage extends InvokeWebDriver {
     @Then("user validates business checking link")
     public void user_validates_business_checking_link() {
         checkingPage.validateBusinessChecking(driver, expectedBusinessChecking);
-    }
-
-    @After
-    public void tearDown() {
-        driver.manage().deleteAllCookies();
-        driver.close();
     }
 }

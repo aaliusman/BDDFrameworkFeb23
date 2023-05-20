@@ -1,1 +1,0 @@
-{"uuid":"7dd93bd9-9c8c-4a71-a598-4a32412c22fc","name":"Scenario: Test 3","children":["8055f076-d3be-4c95-995b-e348ca00e94f"],"befores":[],"afters":[{"name":"stepDefinitions.BOALoginPage.tearDown()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1683987268670,"stop":1683987269544}],"start":1683987250214,"stop":1683987269544}

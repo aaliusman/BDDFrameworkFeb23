@@ -1,6 +1,11 @@
 /Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/driver/InvokeWebDriver.java
-/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/runner/RunnerThree.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/pages/LoginPage.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/runner/LoginRunnerTwo.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/stepDefinitions/Hooks.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/pages/CreditCardsPage.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/runner/CheckingPageRunner.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/pages/CheckingPage.java
 /Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/utils/CommonMethods.java
 /Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/stepDefinitions/BOALoginPage.java
-/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/runner/RunnerTwo.java
+/Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/stepDefinitions/BOACheckingPage.java
 /Users/usman/IdeaProjects/BDDFrameworkFeb23/src/main/java/runner/LoginPageRunner.java

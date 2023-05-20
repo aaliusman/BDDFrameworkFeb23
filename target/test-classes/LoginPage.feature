@@ -1,28 +1,17 @@
 Feature: BOA Login page
 
-  @Regression
-  Scenario: Login functionality with incorrect username
+  Background:
     Given user opens chrome browser
     When user enters url
-    And user enters incorrect username and password
-    And user clicks saveID button
-#    And user clicks login button
-#    Then user validate error message
 
-  @Regression
-  Scenario: Login functionality with incorrect username
-    Given user opens chrome browser
-    When user enters url
-    And user enters incorrect username and password
+#  @Smoke
+  Scenario Outline: Login functionality with multiple users and passwords
+    And user enters "<username>" and "<password>"
     And user clicks saveID button
-    Then user validate open account button
-#    And user clicks login button
-#    Then user validate error message
+    Then user validate open account link
 
-  @Regression
-  Scenario: Test 3
-    Given user opens chrome browser
-    When user enters url
-    And user enters incorrect username and password
-    And user clicks saveID button
-    Then user validate open account button
+    Examples:
+      | username | password |
+      | laksdfj7 | 2432eee4 |
+      | iwouer88 | wwwr444s |
+      | nmnmn444 | 1122www4 |

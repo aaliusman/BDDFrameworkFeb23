@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/LoginPage.feature",
         glue = "stepDefinitions",
         plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
-        tags = "@Regression"
+        tags = "@Smoke"
 )
 public class LoginRunnerTwo extends AbstractTestNGCucumberTests {
 }

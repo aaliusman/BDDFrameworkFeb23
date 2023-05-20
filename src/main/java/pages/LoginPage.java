@@ -14,7 +14,8 @@ public class LoginPage {
     By saveIdButton = By.xpath("//input[@class = 'spa-input-option spa-input-option--checkbox']");
     By loginButton = By.cssSelector("#signIn");
     By errorMessage = By.xpath("//div[@class='error-message']/li");
-    By openAccountButton = By.cssSelector(".spa-btn.spa-btn--primary.spa-btn--medium.masthead-cta-btn");
+    By openAccountButton = By.cssSelector("#open");
+
 
     public void enterUserName(WebDriver driver, String username) {
         commonMethods.enterText(driver, userIdInputField, username);
@@ -38,15 +39,12 @@ public class LoginPage {
         Assert.assertTrue(validateErrorMessage);
     }
 
-    public void validateOpenAccountButton (WebDriver driver, String expectedOpenButtonText, String expectedCheckAccountText) throws InterruptedException {
-        Thread.sleep(2000);
-        boolean isOpenAccountButtonDisplayed = driver.findElement(openAccountButton).isDisplayed();
+    public void validateOpenAccountLink(WebDriver driver, String expectedOpenLinkText) throws InterruptedException {
+        Thread.sleep(1000);
+        boolean isOpenAccountLinkDisplayed = driver.findElement(openAccountButton).isDisplayed();
         String actualText = commonMethods.getTextMethod(driver, openAccountButton);
-        boolean validateText = actualText.contains(expectedOpenButtonText);
-        Assert.assertTrue(isOpenAccountButtonDisplayed, "Open account button is not displayed");
-        Assert.assertTrue(validateText, "Open account text is not displayed");
-        boolean validateHiddenCheckingText = actualText.contains(expectedCheckAccountText);
-        Assert.assertTrue(validateHiddenCheckingText);
+        Assert.assertTrue(isOpenAccountLinkDisplayed, "Open account link is not displayed");
+        Assert.assertEquals(actualText, expectedOpenLinkText);
     }
 
 }

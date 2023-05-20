@@ -1,2 +1,11 @@
-runner/RunnerTwo.class
-runner/RunnerThree.class
+pages/CreditCardsPage.class
+driver/InvokeWebDriver.class
+utils/CommonMethods.class
+stepDefinitions/BOALoginPage.class
+runner/LoginPageRunner.class
+stepDefinitions/Hooks.class
+runner/CheckingPageRunner.class
+stepDefinitions/BOACheckingPage.class
+pages/LoginPage.class
+runner/LoginRunnerTwo.class
+pages/CheckingPage.class
