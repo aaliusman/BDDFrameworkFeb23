@@ -23,4 +23,8 @@ public class CommonMethods {
     public void enterText(WebDriver driver, By locator, String text) {
         driver.findElement(locator).sendKeys(text);
     }
+
+    public void textEnter(WebDriver driver, By locator, String text) {
+        driver.findElement(locator).sendKeys(text);
+    }
 }
